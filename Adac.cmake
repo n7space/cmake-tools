@@ -32,7 +32,7 @@ if(ARM_ELF_ADAC)
     function(adac_compiler sources)
 
         set(FLAGS ${ADAC_CFLAGS};
-        -Wgnat,-I${CMAKE_CURRENT_SOURCE_DIR}/wrappers)
+            -Wgnat,-I${CMAKE_CURRENT_SOURCE_DIR}/wrappers)
 
         foreach(source ${ARGV})
             set(OUT ${source}.o)
